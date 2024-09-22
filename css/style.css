@@ -1,0 +1,63 @@
+/* Footer responsive */
+@media only screen and (max-width: 768px) {
+  .footer-links-wrapper ul {
+    display: none;
+  }
+  .footer-links-wrapper h3 {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .footer-links-wrapper ul {
+    flex-direction: column;
+  }
+  .footer-links-wrapper h3:after {
+    font-family: "FontAwesome";
+    content: "\f067";
+    padding-left: 10px;
+    position: absolute;
+    right: 25px;
+  }
+
+  .footer-links-wrapper h3.expanded:after {
+    font-family: "FontAwesome";
+    content: "\f00d";
+    padding-left: 10px;
+    position: absolute;
+    right: 25px;
+  }
+  /* .footer-links-wrapper h2 {
+    background-color: rgb(39, 37, 39);
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+  } */
+}
+
+/* Search Box */
+.searchbox {
+  z-index: 100;
+  background: #000;
+  padding: 100px;
+  text-align: center;
+  display: none;
+}
+
+.searchbox ul {
+  background: #fff;
+}
+
+.footerul {
+  display: none; /* Hide sub-links initially */
+}
+.toggle-sign {
+  cursor: pointer;
+  float: right; /* Position the toggle sign to the right */
+}
+@media (min-width: 768px) {
+  .footerul {
+    display: block; /* Show sub-links on larger screens */
+  }
+  .toggle-sign {
+    display: none; /* Hide toggle sign on larger screens */
+  }
+}
